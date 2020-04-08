@@ -20,11 +20,11 @@ namespace MethodsChallengeExerciseConsole
             Console.WriteLine("Give me another number");
             int isEqual2 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(isEqual(isEqual1, isEqual2));
+            Console.WriteLine($"Are the numbers equal:{isEqual(isEqual1, isEqual2)}");
 
             Console.WriteLine("Give me a number");
             int evenOrOdd = int.Parse(Console.ReadLine());
-            Console.WriteLine(EvenOrOdd(evenOrOdd));
+            Console.WriteLine($"Is the number even?: {EvenOrOdd(evenOrOdd)}");
 
             Console.WriteLine("Give me a number");
             int posOrNeg = int.Parse(Console.ReadLine());
@@ -62,13 +62,13 @@ namespace MethodsChallengeExerciseConsole
             {
                 Console.WriteLine(a--);
             } while(a >= -1000);
-
+           
             return a;
         }
 
         public static int AddThree(int b)
         {
-            while(b < 999)
+            while (b < 999)
             {
                 b = b + 3;
                 Console.WriteLine(b);
@@ -112,7 +112,7 @@ namespace MethodsChallengeExerciseConsole
             }
             else
             {
-                return "You're too young :(";
+                return "You're too young to vote :(";
             }
         }
 
@@ -133,7 +133,7 @@ namespace MethodsChallengeExerciseConsole
         {
             int product = 0;
             int c = 1;
-            while(c <= 12)
+            while(c < 12)
             {
                product = multi * c;
                 c++;
